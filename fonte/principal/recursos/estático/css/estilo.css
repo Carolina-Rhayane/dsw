@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap');
+
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Inter', sans-serif;
+    color: #5a5a5a;
+}
+
+html {
+    background-color: #e5e5e5;
+}
+
+.glass {
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 1rem;
+}
+
+.container {
+    max-width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.name {
+    font-size: 32px;
+    text-align: center;
+    border-bottom: 1px solid #adadad;
+    padding: .5rem;
+}
+
+.container__name{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.container__infos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    margin: 1rem 0 3rem 0;
+}
+
+.image__wrapper {
+    object-fit: contain;
+}
+
+img {
+    border-radius: 50%;
+    width: 15rem;
+    height: auto;
+}
+
+.infos__wrapper {
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    width: 60%;
+    height: 10rem;
+}
+
+.infos__title {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+}
+
+.infos__text {
+    font-weight: 500;
+}
+
+.container_exp {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.works__wrapper, .studies__wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    height: 10rem;
+    width: 20rem;
+}
+
+.title {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.work, .study {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 1rem;
+}
+
+.about__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    font-size: 16px;
+    color: gray;
+    line-height: 1.5rem;
+}
