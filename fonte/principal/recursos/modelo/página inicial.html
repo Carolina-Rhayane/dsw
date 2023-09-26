@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <main class="container">
+      <div class="">
+        <h1 th:text="${name}" class="name">SEU NOME</h1>
+      </div>
+
+      <div class="container__infos">
+        <div class="image__wrapper">
+          <img src="assets/profile.png" alt="" />
+        </div>
+        <div class="infos__wrapper glass">
+          <p class="infos__title">Email: <span class="infos__text" th:text="${email}"></span></p>
+          <p class="infos__title">Telefone: <span class="infos__text" th:text="${phone}"></span></p>
+          <p class="infos__title">Data de nascimento: <span class="infos__text" th:text="${date}"></span></p>
+          <p class="infos__title">
+            LinkedIn: <a href="https://www.linkedin.com/in/gustavopantaleaodev/" target="_blank" th:text="${linkedin}" class="infos__text"></a>
+          </p>
+          <p class="infos__title">
+            Github: <a href="https://github.com/SSilvaGustavo" target="_blank" th:text="${github}" class="infos__text"></a>
+          </p>
+        </div>
+      </div>
+
+      <div class="container_exp">
+        <div class="works__container glass">
+          <h1 class="title">Experiencia profissional</h1>
+          <div class="works__wrapper">
+            <div class="work">
+              <strong th:text="${experience}"></strong>
+              <p th:text="${role}"></p>
+              <span th:text="${period}"></span>
+            </div>
+            <div class="work">
+              <strong th:text="${experience}"></strong>
+              <p th:text="${role}"></p>
+              <span th:text="${period}"></span>
+            </div>
+          </div>
+        </div>
+
+        <div class="study__container glass">
+          <h1 class="title">Formação acadêmica</h1>
+          <div class="studies__wrapper">
+            <div class="study">
+              <strong th:text="${graduate}"></strong>
+              <p th:text="${university}"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__container">
+        <div class="about__wrapper glass">
+          <p th:text="${about}" class="about"></p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
